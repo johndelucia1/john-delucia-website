@@ -1,0 +1,2 @@
+- name: React Deploy to S3
+  uses: jeanlescure/react-deploy-to-s3-action@v1.1.0
