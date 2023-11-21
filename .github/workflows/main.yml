@@ -1,5 +1,6 @@
 name: Upload Website
-
+uses: jeanlescure/react-deploy-to-s3-action@v1.1.0
+            
 on:
   push:
     branches:
