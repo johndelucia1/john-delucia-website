@@ -1,11 +1,11 @@
 // src/components/Home.js
 import React from 'react';
-
+import './styles.css'
 const Contact = () => {
     return (
         <div>
-            <h2>Contact Page</h2>
-            <p>Welcome to the contact page!</p>
+            <header-1>Contact Page</header-1>
+            <body-1>Welcome to the contact page!</body-1>
         </div>
     );
 };
