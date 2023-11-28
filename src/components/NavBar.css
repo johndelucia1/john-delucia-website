@@ -1,17 +1,21 @@
-/*// src/components/NavBar.css*/
-nav {
-    background-color: #333;
-    color: white;
+/* src/components/NavBar.css */
+.nav-bar {
+    background-color: purple;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
     padding: 10px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.nav-link {
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+    padding: 0px;
 }
 
-li {
-    margin-right: 15px;
+.nav-link:hover {
+    color: blue;
 }

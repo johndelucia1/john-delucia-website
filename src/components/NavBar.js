@@ -6,10 +6,22 @@ import './NavBar.css';
 const NavBar = () => {
     return (
         <nav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+            <ul className="nav-bar">
+                <li>
+                    <Link to="/" className="nav-link">
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/about" className="nav-link">
+                        About
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/contact" className="nav-link">
+                        Contact
+                    </Link>
+                </li>
             </ul>
         </nav>
     );
