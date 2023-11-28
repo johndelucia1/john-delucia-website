@@ -19,3 +19,7 @@
 .nav-link:hover {
     color: lightblue;
 }
+
+.active-link {
+    color: lightblue; /* Color for the active link */
+}
