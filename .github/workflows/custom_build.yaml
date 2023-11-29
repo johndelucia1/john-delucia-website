@@ -1,0 +1,40 @@
+name: Custom Build and Deploy
+
+on:
+  push:
+    branches:
+      - master  # Replace with your main branch name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.15.0'  # Update to the version you are using locally
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build  # Adjust the command based on your project setup
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync build/ s3://your-s3-bucket-name/ --delete
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: CloudFront Cache Invalidation
+        run: |
+          aws configure set preview.cloudfront true
+          aws cloudfront create-invalidation --distribution-id YOUR_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
