@@ -21,8 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install --force
         
-      - name: Fix Dependencies
-        run: npm audit fix --force
+      # - name: Fix Dependencies
+      #   run: npm audit fix --force
 
       - name: Build
         run: npm run build  # Adjust the command based on your project setup
