@@ -1,12 +1,12 @@
 {
   "main": {
-    "name":"Nordic-Giant Project",
-    "description":"I am a web development engineer and I use react and vue.js to develop pages. This project is a resume template that can be used as the project home page or resume page",
+    "name":"John DeLucia",
+    "description":"I am a data scientist specializing in the strategic transformation of unstructured data into valuable insights. With a strong foundation in Mathematics and Statistics from Boston University, I have honed my skills in querying databases, developing KPIs, and implementing statistical models to derive actionable recommendations.",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
+    "bio":"From my early role as a data analyst to my current position as a Lead Data Scientist at Resupply Inc, I have consistently contributed to business development by leveraging my expertise in PostgreSQL, statistical tools, and geographical visualization. As a forward-thinking professional, I am eager to bring my analytical acumen and passion for problem-solving to any strategic business development role.",
+    "contactmessage":"If you have any further questions or would like to discuss your application in more detail, feel free to reach out to me using the contact information provided.",
+    "email": "john@deluciafamily.com",
+    "phone": "631-346-2829",
     "github":"https://github.com/nordicgiant2/react-nice-resume",
     "project":"https://github.com/nordicgiant2/react-nice-resume",
     "address":{
@@ -15,33 +15,23 @@
       "state":"(Your State)",
       "zip": "(Your Zip/Postal Code)"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "http://www.john-delucia.com",
+    "resumedownload":"http://www.john-delucia.com",
     "social":[
       {
         "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"https://www.facebook.com/JohnnyDeLucia/",
         "className":"fa fa-facebook"
       },
       {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
-      },
-      {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"https://linkedin.com/in/john-de-lucia/",
         "className":"fa fa-linkedin"
       },
       {
         "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
+        "url":"https://www.instagram.com/john_delucia/",
         "className":"fa fa-instagram"
-      },
-      {
-        "name":"github",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
-        "className":"fa fa-github"
       }
     ]
   },
