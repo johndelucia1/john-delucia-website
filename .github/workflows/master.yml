@@ -12,12 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@main
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4  # You can specify the version here
-        with:
-          node-version: '14'  # Set the desired Node.js version
-
-      - run: npm install
+      # - name: Set up Node.js
+      #   uses: actions/setup-node@v4  # You can specify the version here
+      #   with:
+      #     node-version: '14'  # Set the desired Node.js version
 
       - uses: lukemorcom/react-deploy-to-s3-action-npm@v1.1.1
         with:
