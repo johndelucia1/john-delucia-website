@@ -6,10 +6,10 @@ class Contact extends Component {
     if (!this.props.data) return null;
 
     const name = this.props.data.name;
-    const street = this.props.data.address.street;
+    // const street = this.props.data.address.street;
     const city = this.props.data.address.city;
     const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
+    // const zip = this.props.data.address.zip;
     const phone = this.props.data.phone;
     const message = this.props.data.contactmessage;
 
@@ -109,9 +109,8 @@ class Contact extends Component {
                 <h4>Address and Phone</h4>
                 <p className="address">
                   {name}
-                  <br />
-                  {street} <br />
-                  {city}, {state} {zip}
+                  <br/>
+                  {city}, {state}
                   <br />
                   <span>{phone}</span>
                 </p>

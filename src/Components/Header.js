@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
+import Particles from "react-particles";
 
 class Header extends Component {
   render() {
@@ -10,10 +11,43 @@ class Header extends Component {
     // const github = this.props.data.github;
     const name = this.props.data.name;
     const description = this.props.data.description;
-
+    // Particle configuration
+    const particleParams = {
+      particles: {
+        number: {
+          value: 50,
+        },
+        size: {
+          value: 3,
+        },
+        shape: {
+          type: 'circle',
+        },
+        move: {
+          speed: 3,
+        },
+      },
+      interactivity: {
+        detectsOn: 'canvas',
+        events: {
+          onHover: {
+            enable: true,
+            mode: 'repulse',
+          },
+        },
+      },
+    };
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
+        {/*<ParticlesBg type="circle" bg={true} />*/}
+        <ParticlesBg
+            type="cobweb"
+            bg={true}
+            color={["#d34300"]}
+            config={{
+
+            }}
+        />
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
